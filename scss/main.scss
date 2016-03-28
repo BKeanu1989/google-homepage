@@ -1,0 +1,157 @@
+$germany : #4285f4;
+$input_width_total : 484px;
+$input_width : 425px;
+$input_bgc : #f8f8f8;
+$input_grey : #f2f2f2;
+$input_color : #757575;
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    a {
+    	text-decoration: none;
+    }
+}
+
+
+nav {
+	float: right;
+
+	ul li {
+	display: inline-block;
+	margin:20px;
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+
+	&:nth-child(5) {
+			background-color: red;
+			border-radius: 50%;
+
+			a {
+				margin-left: 6px;
+				color:white;
+				font-weight: bold;
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+}
+
+
+center {
+	padding-top: 250px;
+	padding-bottom: 150px;
+}
+
+
+.main-logo {
+  display: flex;
+  align-items: center;
+	
+
+	width: 100vw;
+
+
+}
+
+.logo { 
+
+
+	position: relative;
+	display: inline-block;
+
+
+	margin: 0 auto;
+
+
+	img {
+	width: 272px;
+	height: 92px;
+
+
+
+}
+	span {
+		margin-top: -20px;
+		margin-left: 80px;
+		position: absolute;
+		color: $germany;
+	}
+
+}
+
+input[type="text"] {
+	display: block;
+	width: $input_width;
+	
+	background-image: url("../mic.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 24px 24px;
+	height: 25px;
+	border: 1px solid grey;
+
+}
+
+input[type="submit"] {
+	background-color: $input_grey;
+	box-shadow: 0 1px 1px rgba(0,0,0, 0.1);
+	border: 1px solid $input_grey;
+
+	font-size: 13px;
+	font-weight: bold;
+	margin:11px 4px;
+	padding: 0 16px;
+	height: 36px;
+	color: $input_color;
+}
+
+.rest {
+
+	margin-top: 20px;
+
+	a {
+	text-decoration: none;
+}
+
+}
+
+footer {
+	height: 50px;
+	background-color: $input_grey;
+	width:100vw;
+	// display: flex;
+	// align-items: center;
+	display: inline-block;
+	font-size:small;
+	position: absolute;
+	.left {
+		margin-top: 20px;
+		line-height: 15px;
+		width: 25%;
+		display: inline-block;
+
+	}
+
+	.right {
+		display: inline;
+		margin-top: 20px;
+		line-height: 15px;
+
+		float: right;
+		clear: both;
+	}
+
+
+}
+
+
+
+	
